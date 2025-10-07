@@ -47,6 +47,7 @@ Criação do site feito em PHP puro com HTML, CSS, MySQL e TailwindCSS.
 
 4. **Deploy no Vercel:**
    - O arquivo `vercel.json` já está configurado para deploy no Vercel
+   - O runtime usado é `vercel-php@0.6.0` (não é um pacote npm)
    - Configure as variáveis de ambiente no painel do Vercel:
      - `DB_HOST` - Host do banco de dados
      - `DB_USER` - Usuário do banco de dados

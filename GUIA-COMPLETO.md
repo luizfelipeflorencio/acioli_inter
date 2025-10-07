@@ -59,7 +59,7 @@ Este é um website completo para uma empresa de instalação e manutenção de a
 
 ### Arquivo `vercel.json`
 - Configuração especial para deploy no Vercel
-- Define o runtime `@vercel/php` para executar arquivos PHP
+- Define o runtime `vercel-php@0.6.0` para executar arquivos PHP (não é um pacote npm)
 - Configura rotas para servir arquivos corretamente
 - Soluciona o problema de download de arquivos ao invés de execução
 
@@ -181,6 +181,7 @@ Este é um website completo para uma empresa de instalação e manutenção de a
 
 4. **Deploy no Vercel**:
    - O arquivo `vercel.json` já está configurado
+   - O runtime usado é `vercel-php@0.6.0` (não é um pacote npm)
    - Configure as variáveis de ambiente no painel do Vercel:
      - `DB_HOST` - Host do banco de dados
      - `DB_USER` - Usuário do banco de dados

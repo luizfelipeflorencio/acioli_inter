@@ -47,7 +47,7 @@ O sistema:
 ## Deploy no Vercel
 
 O site agora suporta deploy no Vercel graças ao arquivo `vercel.json` que:
-- Configura o runtime PHP correto
+- Configura o runtime `vercel-php@0.6.0` (não é um pacote npm)
 - Define rotas apropriadas
 - Previne o download de arquivos ao invés de executá-los
 
