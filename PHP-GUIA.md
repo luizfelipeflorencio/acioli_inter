@@ -10,12 +10,12 @@ Criação do site feito em PHP puro com HTML, CSS, MySQL e TailwindCSS.
 │   ├── header.php          # Cabeçalho do site
 │   ├── footer.php          # Rodapé do site
 │   └── schema.sql          # Script SQL do banco
+├── vercel.json             # Configuração para deploy no Vercel
 ├── index.php               # Página inicial
 ├── servicos.php            # Página de serviços
 ├── contato.php             # Formulário de contato
 ├── login.php               # Login do admin
 ├── admin.php               # Painel administrativo
-├── logo.jpg                # Logo da empresa
 └── ...                     # Outras imagens
 ```
 
@@ -41,13 +41,21 @@ Criação do site feito em PHP puro com HTML, CSS, MySQL e TailwindCSS.
      ```
 
 3. **Imagens:**
-   - Coloque as imagens na pasta raiz:
+   - Coloque as imagens na pasta `images/`:
      - `logo.jpg` (logo principal)
      - `gree.png`, `hitachi.png`, `lg.png`, `midea.png`, `samsung.png`, `tcl.png`
 
-4. **Acesso:**
-   - Acesse pelo navegador:
-     - `http://localhost/seu_diretorio/index.php`
+4. **Deploy no Vercel:**
+   - O arquivo `vercel.json` já está configurado para deploy no Vercel
+   - Configure as variáveis de ambiente no painel do Vercel:
+     - `DB_HOST` - Host do banco de dados
+     - `DB_USER` - Usuário do banco de dados
+     - `DB_PASS` - Senha do banco de dados
+     - `DB_NAME` - Nome do banco de dados
+
+5. **Acesso:**
+   - Localmente: `http://localhost/seu_diretorio/index.php`
+   - No Vercel: após deploy, use o domínio fornecido pelo Vercel
 
 ## Funcionalidades
 

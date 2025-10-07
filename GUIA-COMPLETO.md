@@ -11,8 +11,9 @@ Este é um website completo para uma empresa de instalação e manutenção de a
 │   ├── header.php           # Componente de cabeçalho reutilizável
 │   ├── schema.sql           # Script SQL para criação do banco de dados
 ├── images/                  # Pasta com todas as imagens do site
+├── vercel.json              # Configuração para deploy no Vercel
 ├── ADMIN-GUIDE.md           # Guia detalhado da área administrativa
-├── README-PHP.md            # Documentação técnica da conversão para PHP
+├── PHP-GUIA.md              # Documentação técnica da versão PHP
 ├── admin.php                # Painel administrativo para gerenciamento de contatos
 ├── contato.php              # Página de contato com formulário de solicitação
 ├── index.php                # Página inicial do website
@@ -30,6 +31,7 @@ Este é um website completo para uma empresa de instalação e manutenção de a
 - Define constantes para host, usuário, senha e nome do banco
 - Utiliza PDO para conexão segura com o banco de dados
 - Contém tratamento de erros para falhas na conexão
+- Configurado para usar variáveis de ambiente do Vercel quando disponíveis
 
 #### `footer.php`
 - Componente reutilizável que renderiza o rodapé do site
@@ -54,6 +56,12 @@ Este é um website completo para uma empresa de instalação e manutenção de a
 - Contém todas as imagens utilizadas no website
 - Inclui logo da empresa, imagens dos serviços, marcas credenciadas e ilustrações
 - Formatos suportados: JPG, PNG
+
+### Arquivo `vercel.json`
+- Configuração especial para deploy no Vercel
+- Define o runtime `@vercel/php` para executar arquivos PHP
+- Configura rotas para servir arquivos corretamente
+- Soluciona o problema de download de arquivos ao invés de execução
 
 ### Arquivos Principais
 
@@ -103,12 +111,12 @@ Este é um website completo para uma empresa de instalação e manutenção de a
 
 ### Documentação
 
-#### `README-PHP.md`
-- Documentação técnica da conversão do site de Next.js para PHP
+#### `PHP-GUIA.md`
+- Documentação técnica da versão PHP do site
 - Instruções de instalação e configuração
 - Requisitos do sistema
 - Descrição das funcionalidades
-- Guia de testes
+- Instruções para deploy no Vercel
 
 #### `ADMIN-GUIDE.md`
 - Guia completo para uso da área administrativa
@@ -171,9 +179,17 @@ Este é um website completo para uma empresa de instalação e manutenção de a
 3. **Configuração das Imagens**:
    - Adicionar logo e imagens dos serviços na pasta `images/`
 
-4. **Acesso**:
-   - Acessar `index.php` para visualizar o site
-   - Acessar `login.php` para área administrativa
+4. **Deploy no Vercel**:
+   - O arquivo `vercel.json` já está configurado
+   - Configure as variáveis de ambiente no painel do Vercel:
+     - `DB_HOST` - Host do banco de dados
+     - `DB_USER` - Usuário do banco de dados
+     - `DB_PASS` - Senha do banco de dados
+     - `DB_NAME` - Nome do banco de dados
+
+5. **Acesso**:
+   - Localmente: `index.php` para visualizar o site
+   - No Vercel: após deploy, use o domínio fornecido pelo Vercel
 
 ## Segurança
 
