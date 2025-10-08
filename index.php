@@ -62,10 +62,10 @@ require_once 'includes/footer.php';
                                 </p>
                             </div>
                             <div class="flex flex-col gap-2 min-[400px]:flex-row justify-center lg:justify-start">
-                                <a href="contato.php" class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 h-10 px-6 py-2 bg-sky-600 hover:bg-sky-700">
+                                <a href="contato.php" class="text-white inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 h-10 px-6 py-2 bg-sky-600 hover:bg-sky-700">
                                     Solicitar Orçamento
                                 </a>
-                                <a href="servicos.php" class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground h-10 px-6 py-2 border-sky-600 text-sky-600">
+                                <a href="servicos.php" class="bg-sky-50 inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground h-10 px-6 py-2 border-sky-600 text-sky-600">
                                     Nossos Serviços
                                 </a>
                             </div>
@@ -210,7 +210,7 @@ require_once 'includes/footer.php';
                                 ?>
                             </ul>
                             <div class="flex flex-col gap-2 min-[400px]:flex-row pt-4 justify-center md:justify-start">
-                                <a href="contato.php" class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 h-10 px-6 py-2 bg-sky-600 hover:bg-sky-700">
+                                <a href="contato.php" class="text-white inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 h-10 px-6 py-2 bg-sky-600 hover:bg-sky-700">
                                     Entre em Contato
                                 </a>
                             </div>
@@ -232,7 +232,7 @@ require_once 'includes/footer.php';
                             </p>
                         </div>
                         <div class="flex flex-col gap-2 min-[400px]:flex-row justify-center">
-                            <a href="contato.php" class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80 h-10 px-6 py-2 cursor-pointer">
+                            <a href="contato.php" class="border bg-blue-600 inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80 h-10 px-6 py-2 cursor-pointer">
                                 Solicitar Orçamento
                             </a>
                         </div>

@@ -62,6 +62,7 @@ function renderFooter() {
 
         <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
           <p>&copy; ' . date("Y") . ' Acioli Climatização. Todos os direitos reservados.</p>
+          <p class="mt-2"><a href="privacidade.php" class="text-gray-400 hover:text-sky-400">Política de Privacidade</a></p>
         </div>
       </div>
     </footer>';

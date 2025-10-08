@@ -209,10 +209,10 @@ require_once 'includes/footer.php';
                             </p>
                         </div>
                         <div class="flex flex-col gap-2 min-[400px]:flex-row justify-center">
-                            <a href="servicos.php" class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80 h-10 px-6 py-2 cursor-pointer">
+                            <a href="servicos.php" class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80 h-10 px-6 py-2 cursor-pointer border border-white bg-blue-600">
                                 Ver Serviços
                             </a>
-                            <a href="contato.php" class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground h-10 px-6 py-2 border-white text-white">
+                            <a href="contato.php" class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground h-10 px-6 py-2 border-white text-white bg-blue-600">
                                 Entrar em Contato
                             </a>
                         </div>

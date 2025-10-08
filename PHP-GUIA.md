@@ -15,6 +15,7 @@ Criação do site feito em PHP puro com HTML, CSS, MySQL e TailwindCSS.
 ├── contato.php             # Formulário de contato
 ├── login.php               # Login do admin
 ├── admin.php               # Painel administrativo
+├── privacidade.php         # Política de privacidade e cookies (LGPD)
 ├── logo.jpg                # Logo da empresa
 └── ...                     # Outras imagens
 ```
@@ -58,6 +59,9 @@ Criação do site feito em PHP puro com HTML, CSS, MySQL e TailwindCSS.
 - **WhatsApp:** Botão pra enviar mensagem direto pro cliente
 - **Responsivo:** Funciona em celular e desktop
 - **Navegação:** Menu que se adapta ao tamanho da tela
+- **LGPD:** Conformidade com a Lei Geral de Proteção de Dados
+  - Banner de consentimento de cookies
+  - Política de privacidade
 
 ## Área Administrativa
 
@@ -70,10 +74,18 @@ Criação do site feito em PHP puro com HTML, CSS, MySQL e TailwindCSS.
   - Enviar mensagem pelo WhatsApp com um clique
   - Fazer logout
 
+## Conformidade com LGPD
+
+O site agora está em conformidade com a Lei Geral de Proteção de Dados (LGPD):
+- Banner de consentimento de cookies adicionado ao cabeçalho
+- Página de política de privacidade ([privacidade.php](file:///c%3A/xampp/htdocs/acioli/privacidade.php))
+- Armazenamento de preferências de cookies usando localStorage
+- Informações claras sobre coleta e uso de dados
+
 ## Tecnologias
 
 - **PHP:** Backend
 - **HTML5:** Estrutura
 - **TailwindCSS:** Estilos (via CDN)
 - **MySQL:** Banco de dados
-- **JavaScript:** Coisas interativas (menu mobile)
+- **JavaScript:** Coisas interativas (menu mobile, cookies)

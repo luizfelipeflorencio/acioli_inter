@@ -16,7 +16,7 @@ function renderHeader() {
         <!-- Logo -->
         <div class="flex items-center z-10">
           <a href="index.php" class="flex items-center space-x-2">
-            <img src="logo.jpg" alt="logo Acioli Climatização" class="w-10 h-10 object-contain rounded-xl" />
+            <img src="images/logo.jpg" alt="logo Acioli Climatização" class="w-10 h-10 object-contain rounded-xl" />
             <span class="text-xl font-bold text-sky-700">Acioli Climatização</span>
           </a>
         </div>
@@ -41,11 +41,59 @@ function renderHeader() {
       </div>
     </header>
     
+    <!-- Cookie Consent Banner for LGPD Compliance -->
+    <div id="cookieConsent" class="fixed bottom-0 left-0 right-0 z-[100] bg-gray-800 text-white p-4 shadow-lg hidden">
+      <div class="container mx-auto">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+          <div class="flex-1">
+            <p class="text-sm">
+              Este site utiliza cookies para melhorar a sua experiência de navegação. Ao continuar navegando, você concorda com o uso de cookies de acordo com a nossa <a href="privacidade.php" class="text-sky-300 hover:text-sky-200 underline">Política de Privacidade</a>.
+            </p>
+          </div>
+          <div class="flex gap-2">
+            <button id="acceptCookies" class="px-4 py-2 bg-sky-600 hover:bg-sky-700 text-white rounded-md text-sm font-medium transition-colors">
+              Aceitar
+            </button>
+            <button id="rejectCookies" class="px-4 py-2 bg-gray-600 hover:bg-gray-700 text-white rounded-md text-sm font-medium transition-colors">
+              Rejeitar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
     <script>
       // Mobile menu toggle
       document.getElementById("mobile-menu-button").addEventListener("click", function() {
         const menu = document.getElementById("mobile-menu");
         menu.classList.toggle("hidden");
+      });
+      
+      // Cookie Consent functionality
+      document.addEventListener("DOMContentLoaded", function() {
+        const cookieConsent = document.getElementById("cookieConsent");
+        const acceptButton = document.getElementById("acceptCookies");
+        const rejectButton = document.getElementById("rejectCookies");
+        
+        // Check if user has already made a choice
+        const consentGiven = localStorage.getItem("cookieConsent");
+        
+        if (!consentGiven) {
+          // Show the cookie consent banner
+          cookieConsent.classList.remove("hidden");
+        }
+        
+        // Accept cookies
+        acceptButton.addEventListener("click", function() {
+          localStorage.setItem("cookieConsent", "accepted");
+          cookieConsent.classList.add("hidden");
+        });
+        
+        // Reject cookies
+        rejectButton.addEventListener("click", function() {
+          localStorage.setItem("cookieConsent", "rejected");
+          cookieConsent.classList.add("hidden");
+        });
       });
     </script>';
 }

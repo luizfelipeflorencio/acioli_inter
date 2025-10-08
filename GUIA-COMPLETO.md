@@ -17,6 +17,7 @@ Este é um website completo para uma empresa de instalação e manutenção de a
 ├── contato.php              # Página de contato com formulário de solicitação
 ├── index.php                # Página inicial do website
 ├── login.php                # Página de autenticação da área administrativa
+├── privacidade.php          # Página de política de privacidade e cookies (LGPD)
 ├── servicos.php             # Página com detalhamento dos serviços oferecidos
 └── sobre.php                # Página sobre a empresa e equipe
 ```
@@ -36,6 +37,7 @@ Este é um website completo para uma empresa de instalação e manutenção de a
 - Contém informações de contato, links rápidos, serviços e redes sociais
 - Inclui seção de direitos autorais com ano dinâmico
 - Função `renderFooter()` para fácil inclusão em todas as páginas
+- Link para Política de Privacidade
 
 #### `header.php`
 - Componente reutilizável que renderiza o cabeçalho do site
@@ -43,6 +45,7 @@ Este é um website completo para uma empresa de instalação e manutenção de a
 - Implementa menu responsivo com toggle para dispositivos móveis
 - Inclui logo da empresa e script JavaScript para funcionalidade do menu mobile
 - Função `renderHeader()` para fácil inclusão em todas as páginas
+- Banner de consentimento de cookies para conformidade com LGPD
 
 #### `schema.sql`
 - Script SQL para criação do banco de dados e tabelas
@@ -86,6 +89,13 @@ Este é um website completo para uma empresa de instalação e manutenção de a
 - Mensagens de sucesso após envio do formulário
 - Validação de campos obrigatórios (nome, telefone, serviço)
 
+#### `privacidade.php` (Política de Privacidade)
+- Página com a política de privacidade e uso de cookies
+- Informações sobre conformidade com a LGPD
+- Detalhamento dos tipos de cookies utilizados
+- Direitos do titular dos dados
+- Informações de contato para questões de privacidade
+
 #### `login.php` (Área Administrativa - Login)
 - Página de autenticação para acesso à área administrativa
 - Formulário com campos de usuário e senha
@@ -122,7 +132,7 @@ Este é um website completo para uma empresa de instalação e manutenção de a
 - **PHP**: Linguagem de programação do lado do servidor
 - **HTML5**: Estruturação das páginas
 - **TailwindCSS**: Framework CSS para estilização (via CDN)
-- **JavaScript**: Funcionalidades interativas (menu mobile)
+- **JavaScript**: Funcionalidades interativas (menu mobile, cookies)
 - **MySQL**: Banco de dados para armazenar solicitações de contato
 - **Font Awesome**: Ícones e elementos visuais
 - **Google Fonts**: Tipografia personalizada (fonte Inter)
@@ -156,6 +166,12 @@ Este é um website completo para uma empresa de instalação e manutenção de a
    - Mensagens pré-preenchidas
    - Facilita o atendimento pós-formulário
 
+6. **Conformidade com LGPD**:
+   - Banner de consentimento de cookies
+   - Política de privacidade detalhada
+   - Armazenamento de preferências do usuário
+   - Respeito aos direitos do titular dos dados
+
 ## Instalação e Configuração
 
 1. **Requisitos**:
@@ -178,6 +194,14 @@ Este é um website completo para uma empresa de instalação e manutenção de a
 ## Segurança
 
 > **Importante**: As credenciais padrão (admin/admin123) devem ser alteradas em ambiente de produção. A implementação atual é para demonstração e não inclui recursos avançados de segurança.
+
+## Conformidade com LGPD
+
+O site agora está em conformidade com a Lei Geral de Proteção de Dados (LGPD):
+- Implementação de banner de consentimento de cookies
+- Página de política de privacidade detalhada
+- Respeito aos direitos do titular dos dados
+- Uso de localStorage para armazenar preferências de cookies
 
 ## Suporte
 
