@@ -44,21 +44,6 @@ O sistema:
 - Adiciona código do país (55) se necessário
 - Monta o link certo pro WhatsApp
 
-## Deploy no Vercel
-
-O site agora suporta deploy no Vercel graças ao arquivo `vercel.json` que:
-- Configura o runtime `vercel-php@0.6.0` (não é um pacote npm)
-- Define rotas apropriadas
-- Previne o download de arquivos ao invés de executá-los
-
-Para deploy:
-1. Conecte seu repositório ao Vercel
-2. Configure as variáveis de ambiente:
-   - `DB_HOST` - Host do banco de dados
-   - `DB_USER` - Usuário do banco de dados
-   - `DB_PASS` - Senha do banco de dados
-   - `DB_NAME` - Nome do banco de dados
-
 ## Segurança
 
 > **Atenção:** Mude as credenciais padrão em produção. 

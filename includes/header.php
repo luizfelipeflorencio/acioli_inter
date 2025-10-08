@@ -16,7 +16,7 @@ function renderHeader() {
         <!-- Logo -->
         <div class="flex items-center z-10">
           <a href="index.php" class="flex items-center space-x-2">
-            <img src="images/logo.jpg" alt="logo Acioli Climatização" class="w-10 h-10 object-contain rounded-xl" />
+            <img src="logo.jpg" alt="logo Acioli Climatização" class="w-10 h-10 object-contain rounded-xl" />
             <span class="text-xl font-bold text-sky-700">Acioli Climatização</span>
           </a>
         </div>
