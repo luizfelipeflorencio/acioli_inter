@@ -1,0 +1,14 @@
+.git
+.gitignore
+README.md
+.env.example
+.dockerignore
+Dockerfile
+docker-compose.yml
+node_modules
+npm-debug.log
+.gitlab-ci.yml
+.coverage
+.vscode
+.DS_Store
+Thumbs.db

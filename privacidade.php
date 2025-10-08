@@ -40,7 +40,7 @@ require_once 'includes/footer.php';
         <?php renderHeader(); ?>
         
         <main class="flex-1">
-            <!-- Hero Section -->
+            <!-- seção de banner -->
             <section class="w-full py-12 md:py-24 bg-gradient-to-b from-sky-50 to-white">
                 <div class="container px-4 md:px-6 mx-auto">
                     <div class="max-w-3xl mx-auto text-center">
@@ -54,7 +54,7 @@ require_once 'includes/footer.php';
                 </div>
             </section>
 
-            <!-- Privacy Policy Content -->
+            <!-- Conteúdo da Política de Privacidade -->
             <section class="w-full py-12 md:py-24 bg-white">
                 <div class="container px-4 md:px-6 mx-auto">
                     <div class="max-w-4xl mx-auto prose prose-sky">
