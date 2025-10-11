@@ -5,7 +5,6 @@ if (file_exists($env_file)) {
     $lines = file($env_file, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
     foreach ($lines as $line) {
         if (strpos($line, '=') !== false && strpos($line, '#') !== 0) {
-            // Remove inline comments
             $line = preg_split('/\s+#/', $line)[0];
             list($key, $value) = explode('=', $line, 2);
             $_ENV[$key] = trim($value);
