@@ -2,7 +2,6 @@
 session_start();
 require_once 'includes/db.php';
 require_once 'includes/header.php';
-require_once 'includes/footer.php';
 
 // Checagem de login
 if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
@@ -118,7 +117,6 @@ try {
                             <table class="min-w-full divide-y divide-gray-200">
                                 <thead class="bg-gray-50">
                                     <tr>
-                                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">ID</th>
                                         <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Nome</th>
                                         <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Serviço</th>
                                         <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Telefone</th>
@@ -149,7 +147,6 @@ try {
                                         $whatsappUrl = "https://wa.me/{$cleanPhone}?text=" . urlencode($message);
                                         ?>
                                         <tr class="hover:bg-gray-50">
-                                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><?php echo htmlspecialchars($submission['id']); ?></td>
                                             <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900"><?php echo htmlspecialchars($submission['name']); ?></td>
                                             <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                                                 <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-sky-100 text-sky-800">
@@ -183,8 +180,6 @@ try {
                 </div>
             </section>
         </main>
-        
-        <?php renderFooter(); ?>
     </div>
 </body>
 </html>

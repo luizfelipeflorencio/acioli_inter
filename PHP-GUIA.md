@@ -78,7 +78,7 @@ Criação do site feito em PHP puro com HTML, CSS, MySQL e TailwindCSS.
 
 O site agora está em conformidade com a Lei Geral de Proteção de Dados (LGPD):
 - Banner de consentimento de cookies adicionado ao cabeçalho
-- Página de política de privacidade ([privacidade.php](file:///c%3A/xampp/htdocs/acioli/privacidade.php))
+- Página de política de privacidade ([privacidade.php])
 - Armazenamento de preferências de cookies usando localStorage
 - Informações claras sobre coleta e uso de dados
 

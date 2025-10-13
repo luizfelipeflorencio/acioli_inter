@@ -58,7 +58,7 @@ O sistema:
 Pra mudar o login, edite `login.php`:
 
 ```php
-if ($username === "admin" && $password === "admin123") {
+if ($username === "admin" && $password === "admin123")
 ```
 
 Pra algo mais seguro:
