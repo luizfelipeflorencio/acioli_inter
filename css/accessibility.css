@@ -1,0 +1,208 @@
+/**
+ * Accessibility System Styles
+ * Provides styling for the accessibility panel and features
+ */
+
+/* Accessibility Panel Styles */
+.accessibility-panel {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 300px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  font-family: 'Inter', sans-serif;
+  border: 1px solid #e5e7eb;
+}
+
+.accessibility-panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  border-bottom: 1px solid #e5e7eb;
+  background-color: #f9fafb;
+  border-radius: 8px 8px 0 0;
+}
+
+.accessibility-panel-header h3 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.accessibility-close-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #6b7280;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.accessibility-close-btn:hover {
+  background-color: #f3f4f6;
+  color: #1f2937;
+}
+
+.accessibility-panel-content {
+  padding: 16px;
+}
+
+.accessibility-section {
+  margin-bottom: 20px;
+}
+
+.accessibility-section:last-child {
+  margin-bottom: 0;
+}
+
+.accessibility-section h4 {
+  margin: 0 0 12px 0;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.accessibility-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.accessibility-btn {
+  flex: 1;
+  min-width: 70px;
+  padding: 8px 12px;
+  background-color: #f3f4f6;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.accessibility-btn:hover {
+  background-color: #e5e7eb;
+  border-color: #9ca3af;
+}
+
+.accessibility-btn:active {
+  background-color: #d1d5db;
+}
+
+/* Accessibility Toggle Button */
+#accessibility-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #0ea5e9;
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1001;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+#accessibility-toggle:hover {
+  background-color: #0284c7;
+  transform: scale(1.05);
+}
+
+#accessibility-toggle:focus {
+  outline: 2px solid #0ea5e9;
+  outline-offset: 2px;
+}
+
+/* Contrast Mode Styles */
+.contrast-normal {
+  /* Default styles - no changes needed */
+}
+
+.contrast-high-contrast {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+.contrast-high-contrast a,
+.contrast-high-contrast a:visited {
+  color: #0000ff !important;
+}
+
+.contrast-high-contrast button,
+.contrast-high-contrast .btn {
+  background-color: #ffff00 !important;
+  color: #000000 !important;
+  border: 2px solid #000000 !important;
+}
+
+.contrast-dark {
+  background-color: #111827 !important;
+  color: #f9fafb !important;
+}
+
+.contrast-dark a,
+.contrast-dark a:visited {
+  color: #60a5fa !important;
+}
+
+.contrast-dark button,
+.contrast-dark .btn {
+  background-color: #374151 !important;
+  color: #f9fafb !important;
+  border: 1px solid #4b5563 !important;
+}
+
+/* Font Size Classes (Tailwind classes will be used) */
+/* These are defined in the JavaScript but we can add custom styles if needed */
+
+/* Color Tone Styles */
+.tone-warm {
+  filter: sepia(0.3) hue-rotate(-20deg) saturate(1.2);
+}
+
+.tone-cool {
+  filter: sepia(0.2) hue-rotate(180deg) saturate(0.9);
+}
+
+.tone-neutral {
+  /* Default - no filter applied */
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .accessibility-panel {
+    width: calc(100% - 40px);
+    right: 20px;
+    left: 20px;
+    bottom: 80px;
+  }
+  
+  .accessibility-options {
+    flex-direction: column;
+  }
+  
+  .accessibility-btn {
+    width: 100%;
+  }
+}

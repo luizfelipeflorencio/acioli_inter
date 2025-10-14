@@ -62,6 +62,11 @@ function renderHeader() {
       </div>
     </div>
     
+    <!-- Accessibility Toggle Button -->
+    <button id="accessibility-toggle" aria-label="Configurações de acessibilidade">
+      ♿
+    </button>
+    
     <script>
       // Mobile menu toggle
       document.getElementById("mobile-menu-button").addEventListener("click", function() {

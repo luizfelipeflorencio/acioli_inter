@@ -17,6 +17,9 @@ require_once 'includes/footer.php';
     <!-- Fonte dos Icones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
+    <!-- Accessibility CSS -->
+    <link rel="stylesheet" href="css/accessibility.css">
+    
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -243,5 +246,8 @@ require_once 'includes/footer.php';
         
         <?php renderFooter(); ?>
     </div>
+    
+    <!-- Accessibility JavaScript -->
+    <script src="js/accessibility.js"></script>
 </body>
 </html>
